@@ -1,5 +1,6 @@
 package cl.bootcamp.proyectos;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -21,18 +22,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
-
-
-
     }
 
     public void init() {
         element = new ArrayList<>();
         element.add(new ListElement(
-                "#2a6c8c",
-                "Clase 5",
-                "#2a6c8c",
-                "RecyclerView",
+                "#11212D",
+                "Contador",
+                "#11212D",
+                "Actividad de Contador",
                 "Activo")
         );
         ListAdapter listAdapter = new ListAdapter(element, this);
@@ -44,10 +42,25 @@ public class MainActivity extends AppCompatActivity {
         listAdapter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int position = recyclerView.getChildAdapterPosition(view);
+                Intent intent;
+
+                if (view.getId() != 0) {
+                    switch (position) {
+                        case 0:
+                            intent = new Intent(view.getContext(), Contador.class);
+                            view.getContext().startActivity(intent);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+
                 Toast.makeText(getApplicationContext(),
                         "Selección: " + element.get
-                                (recyclerView.getChildAdapterPosition(view))
-                                .getName(), Toast.LENGTH_SHORT).show();
+                                (position).getName()
+                                + " - Posición: " + position, Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Proyectos"
         tools:targetApi="31">
         <activity
+            android:name=".Contador"
+            android:exported="false" />
+        <activity
             android:name=".ListElement"
             android:exported="false" />
         <activity
