@@ -33,6 +33,20 @@ public class MainActivity extends AppCompatActivity {
                 "Actividad de Contador",
                 "Activo")
         );
+        element.add(new ListElement(
+                "#11212D",
+                "Fragment",
+                "#11212D",
+                "Difrentes fragmentos",
+                "Activo")
+        );
+        element.add(new ListElement(
+                "#11212D",
+                "WebFont",
+                "#11212D",
+                "Conectados a la red",
+                "En Proceso...")
+        );
         ListAdapter listAdapter = new ListAdapter(element, this);
         RecyclerView recyclerView = findViewById(R.id.rvList);
         recyclerView.setHasFixedSize(true);
@@ -49,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     switch (position) {
                         case 0:
                             intent = new Intent(view.getContext(), Contador.class);
+                            view.getContext().startActivity(intent);
+                            break;
+                        case 1:
+                            intent = new Intent(view.getContext(), ContenedorFragmentos.class);
+                            view.getContext().startActivity(intent);
+                            break;
+                        case 2:
+                            intent = new Intent(view.getContext(), WebFont.class);
                             view.getContext().startActivity(intent);
                             break;
                         default:
