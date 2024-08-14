@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 "WebFont",
                 "#11212D",
                 "Conectados a la red",
+                "Activo")
+        );
+        element.add(new ListElement(
+                "#11212D",
+                "Buttons",
+                "#11212D",
+                "Conectados a la red",
                 "En Proceso...")
         );
         ListAdapter listAdapter = new ListAdapter(element, this);
@@ -73,16 +80,20 @@ public class MainActivity extends AppCompatActivity {
                             intent = new Intent(view.getContext(), WebFont.class);
                             view.getContext().startActivity(intent);
                             break;
+                        case 3:
+                            intent = new Intent(view.getContext(), BindingButtons.class);
+                            view.getContext().startActivity(intent);
+                            break;
                         default:
                             break;
                     }
                 }
 
 
-                Toast.makeText(getApplicationContext(),
-                        "Selección: " + element.get
-                                (position).getName()
-                                + " - Posición: " + position, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),
+//                        "Selección: " + element.get
+//                                (position).getName()
+//                                + " - Posición: " + position, Toast.LENGTH_SHORT).show();
             }
         });
     }

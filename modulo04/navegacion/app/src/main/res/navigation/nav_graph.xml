@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/defaultFragment">
+
+    <fragment
+        android:id="@+id/defaultFragment"
+        android:name="cl.bootcamp.navegacion.DefaultFragment"
+        android:label="fragment_default"
+        tools:layout="@layout/fragment_default" >
+        <action
+            android:id="@+id/action_defaultFragment_to_primerFragment"
+            app:destination="@id/primerFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_defaultFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/primerFragment"
+        android:name="cl.bootcamp.navegacion.PrimerFragment"
+        android:label="fragment_primer"
+        tools:layout="@layout/fragment_primer" >
+        <action
+            android:id="@+id/action_primerFragment_to_defaultFragment"
+            app:destination="@id/defaultFragment"
+            app:enterAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="cl.bootcamp.navegacion.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundoFragment_to_defaultFragment"
+            app:destination="@id/defaultFragment" />
+        <action
+            android:id="@+id/action_segundoFragment_to_tercerFragment"
+            app:destination="@id/tercerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tercerFragment"
+        android:name="cl.bootcamp.navegacion.TercerFragment"
+        android:label="fragment_tercer"
+        tools:layout="@layout/fragment_tercer" >
+        <action
+            android:id="@+id/action_tercerFragment_to_defaultFragment"
+            app:destination="@id/defaultFragment" />
+    </fragment>
+</navigation>
