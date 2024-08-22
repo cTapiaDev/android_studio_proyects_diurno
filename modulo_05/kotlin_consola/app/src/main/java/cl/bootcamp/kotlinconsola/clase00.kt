@@ -19,6 +19,7 @@ fun main() {
 
     // NULL SAFETY
     var text : String? = ""
+    //-----
     text = null
 
     text?.let {
