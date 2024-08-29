@@ -68,7 +68,7 @@ fun ContentDetailsView(navController: NavController, id: Int, nombre: String?) {
         }
         Space()
         MainButton(name = "Home View", backColor = Color.Blue, color = Color.White) {
-            navController.popBackStack()
+            navController.navigate("Home")
         }
     }
 }

@@ -45,7 +45,7 @@ fun HomeView(navController: NavController) {
 fun ContentHomeView(navController: NavController) {
 
     val id = 12366
-    val nombre = ""
+    val nombre = "hola"
 
     Column(
         modifier = Modifier

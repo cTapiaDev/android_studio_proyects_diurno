@@ -53,7 +53,7 @@ fun LoteryNumbers(numbers: List<Int>) {
             vertical = 8.dp
         )
     ) {
-        items(numbers) { number ->
+        items(numbers) { item ->
             Box(
                 modifier = Modifier
                     .padding(horizontal = 4.dp)
@@ -62,7 +62,7 @@ fun LoteryNumbers(numbers: List<Int>) {
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = number.toString(),
+                    text = item.toString(),
                     color = Color.White,
                     fontSize = 24.sp
                 )
