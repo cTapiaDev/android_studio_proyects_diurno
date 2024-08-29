@@ -122,7 +122,7 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
+        android:layout_marginBottom="708dp"
         android:drawableEnd="@drawable/icon_arrow_login"
         android:paddingStart="65dp"
         android:text="@string/btnLogin"
