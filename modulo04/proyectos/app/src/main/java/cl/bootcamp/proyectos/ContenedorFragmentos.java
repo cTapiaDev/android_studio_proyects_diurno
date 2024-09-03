@@ -39,7 +39,7 @@ public class ContenedorFragmentos extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().add(R.id.flContainer, primaryFragment).commit();
 
-        //transaction = getSupportFragmentManager().beginTransaction();
+        transaction = getSupportFragmentManager().beginTransaction();
 
         btnFrame1.setOnClickListener(new View.OnClickListener() {
             @Override
