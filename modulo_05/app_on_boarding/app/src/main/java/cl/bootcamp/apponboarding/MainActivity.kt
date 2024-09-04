@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import cl.bootcamp.apponboarding.navigation.NavManager
 import cl.bootcamp.apponboarding.onBoardingViews.MainOnBoarding
 import cl.bootcamp.apponboarding.ui.theme.AppOnBoardingTheme
 
@@ -21,7 +22,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             AppOnBoardingTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MainOnBoarding(modifier = Modifier.padding(innerPadding))
+                    //MainOnBoarding(modifier = Modifier.padding(innerPadding))
+                    NavManager(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
