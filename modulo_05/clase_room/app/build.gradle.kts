@@ -77,5 +77,8 @@ dependencies {
     ksp(libs.hilt.compiler)
 
     implementation(libs.androidx.navigation.compose)
+    implementation(kotlin("script-runtime"))
+
+    implementation(libs.swipe)
 
 }
