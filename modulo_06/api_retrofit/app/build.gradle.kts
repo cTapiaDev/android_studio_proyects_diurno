@@ -77,4 +77,6 @@ dependencies {
     implementation(libs.converter.gson)
 
     implementation(libs.coil.compose)
+
+    implementation(libs.accompanist.systemuicontroller)
 }

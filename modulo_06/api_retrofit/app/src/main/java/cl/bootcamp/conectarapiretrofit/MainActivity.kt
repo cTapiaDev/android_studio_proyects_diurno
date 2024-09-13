@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import cl.bootcamp.conectarapiretrofit.navigation.NavManager
 import cl.bootcamp.conectarapiretrofit.ui.theme.ConectarApiRetrofitTheme
 import cl.bootcamp.conectarapiretrofit.viewModels.GamesViewModel
 import cl.bootcamp.conectarapiretrofit.views.HomeView
@@ -25,9 +26,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ConectarApiRetrofitTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeView(modifier = Modifier.padding(innerPadding), viewModel)
-                }
+                NavManager(viewModel)
             }
         }
     }
