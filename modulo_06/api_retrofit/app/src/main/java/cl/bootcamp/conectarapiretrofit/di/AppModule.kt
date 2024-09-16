@@ -28,7 +28,4 @@ object AppModule {
     fun providesApiGames(retrofit: Retrofit): ApiGames {
         return retrofit.create(ApiGames::class.java)
     }
-
-
-
 }
