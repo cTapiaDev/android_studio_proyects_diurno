@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import cl.bootcamp.appwishlist.data.Wish
+import cl.bootcamp.appwishlist.model.Wish
 
 @Composable
 fun WishItem(wish: Wish, onClick: () -> Unit) {
