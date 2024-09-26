@@ -5,4 +5,6 @@
     <string name="update_wish">Update Wish</string>
     <string name="title_txt">Title</string>
     <string name="desc_txt">Description</string>
+
+    <string name="snake_enter">Enter fields to create a wish</string>
 </resources>
