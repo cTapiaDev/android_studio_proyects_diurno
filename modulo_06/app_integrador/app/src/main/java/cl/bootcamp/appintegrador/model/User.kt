@@ -1,9 +1,14 @@
 package cl.bootcamp.appintegrador.model
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "user")
 data class User(
-    val name: String,
-    val lastName: String,
-    val city: String,
-    val thumbnail: String,
-    var id: Int = 0
+    @ColumnInfo(name = "name") val name: String,
+    @ColumnInfo(name = "lastName") val lastName: String,
+    @ColumnInfo(name = "city") val city: String,
+    @ColumnInfo(name = "thumbnail") val thumbnail: String,
+    @PrimaryKey(autoGenerate = true) var id: Int = 0,
 )

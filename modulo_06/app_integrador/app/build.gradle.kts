@@ -57,6 +57,7 @@ kapt {
 
 dependencies {
 
+    implementation(kotlin("script-runtime"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -80,4 +81,13 @@ dependencies {
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
+    // Room
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+
+    // Coil & Shimmer (Proceso de imagenes y skeleton)
+    implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation("com.valentinilk.shimmer:compose-shimmer:1.0.0")
 }

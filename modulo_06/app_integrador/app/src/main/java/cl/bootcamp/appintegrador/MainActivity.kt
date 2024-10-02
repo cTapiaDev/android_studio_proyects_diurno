@@ -25,9 +25,7 @@ class MainActivity : ComponentActivity() {
         val viewModel: UserViewModel by viewModels()
         setContent {
             AppIntegradorTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeView(innerPadding, viewModel)
-                }
+                HomeView(viewModel)
             }
         }
     }
