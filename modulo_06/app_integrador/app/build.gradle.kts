@@ -16,7 +16,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "cl.bootcamp.appintegrador.utils.CustomTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -57,7 +57,7 @@ kapt {
 
 dependencies {
 
-    implementation(kotlin("script-runtime"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -90,4 +90,13 @@ dependencies {
     // Coil & Shimmer (Proceso de imagenes y skeleton)
     implementation("io.coil-kt:coil-compose:2.7.0")
     implementation("com.valentinilk.shimmer:compose-shimmer:1.0.0")
+
+    // Test
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.51.1")
+    kaptAndroidTest("com.google.dagger:hilt-compiler:2.51.1")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+    testImplementation("android.arch.core:core-testing:1.1.1")
+
+    // Hilt para ViewModel
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 }

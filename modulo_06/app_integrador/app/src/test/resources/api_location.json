@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "location": {
+        "street": {
+          "number": 7460,
+          "name": "Lole Ribara"
+        },
+        "city": "Čajetina",
+        "state": "Šumadija",
+        "country": "Serbia",
+        "postcode": 64649,
+        "coordinates": {
+          "latitude": "57.3683",
+          "longitude": "-112.3587"
+        },
+        "timezone": {
+          "offset": "-12:00",
+          "description": "Eniwetok, Kwajalein"
+        }
+      }
+    }
+  ],
+  "info": {
+    "seed": "ea01e860f87a8753",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}

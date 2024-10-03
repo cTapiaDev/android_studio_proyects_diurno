@@ -32,6 +32,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import cl.bootcamp.appintegrador.components.LoadingCard
 import cl.bootcamp.appintegrador.components.Space
 import cl.bootcamp.appintegrador.viewModel.UserViewModel
@@ -39,7 +40,9 @@ import coil.compose.rememberAsyncImagePainter
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeView(viewModel: UserViewModel) {
+fun HomeView(
+    viewModel: UserViewModel = hiltViewModel()
+) {
     Scaffold(
         topBar = {
             TopAppBar(
