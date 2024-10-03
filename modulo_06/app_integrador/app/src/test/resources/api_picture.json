@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/92.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/92.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/92.jpg"
+      }
+    }
+  ],
+  "info": {
+    "seed": "a4cd2a5c89a92d0e",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
