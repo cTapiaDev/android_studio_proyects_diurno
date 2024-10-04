@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231628853649",
+    "project_id": "appfirebasenotes",
+    "storage_bucket": "appfirebasenotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231628853649:android:df6babdf220a9d7ba80a30",
+        "android_client_info": {
+          "package_name": "cl.bootcamp.appfirebasenotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIl-_wqlkW0PkQhGeKm7GJZcEZwGZkYgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
